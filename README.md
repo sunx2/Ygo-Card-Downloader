@@ -1,5 +1,6 @@
 # What is This ?
 A tool for populating cards folder in Ygo sims based on Floro Ocgcore
+### No download required.
 
 
 # How does it looks like?
