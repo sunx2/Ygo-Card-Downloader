@@ -6,7 +6,7 @@
 $form = New-Object Windows.Forms.Form
 $list = New-Object Collections.Generic.List[Int]
 $client = New-Object System.Net.Webclient
-$server = "https://cdn.jsdelivr.net/gh/ElvinaOlacarynWorld/OlacarynWorld@d079300"
+$server = "https://cdn.jsdelivr.net/gh/ElvinaOlacaryn/TheOlacarynWorld@187adfc"
 $form.text = "Ygo Card Downloader"
 $label = New-Object Windows.Forms.Label
 $label.Location = New-Object Drawing.Point 50,30
@@ -43,7 +43,7 @@ $combobox.TabIndex = 1
 $combobox.SelectedIndex = 0
 $combobox_changed = {
     if ($combobox.Text -eq "Server: Nexus"){
-        $server = "https://cdn.jsdelivr.net/gh/ElvinaOlacarynWorld/OlacarynWorld@d079300"
+        $server = "https://cdn.jsdelivr.net/gh/ElvinaOlacaryn/TheOlacarynWorld@187adfc"
         Write-Host "selected Nexus"
     }
     if ($combobox.Text -eq "Server: Ygoprodeck"){
@@ -51,6 +51,8 @@ $combobox_changed = {
         Write-Host "selected Ygoprodeck"
     }
 }
+
+
 $comboBox.add_SelectedIndexChanged($combobox_changed)
 $button = New-Object Windows.Forms.Button
 $button.text = "Search "
@@ -58,6 +60,8 @@ $button.Location = New-Object Drawing.Point 100,150
 $button2 = New-Object Windows.Forms.Button
 $button2.text = "Download"
 $button2.Location = New-Object Drawing.Point 100,240
+
+
 $button.add_click({
     try {
         #Add-Type -Path "E:\important_apps\sqlite3\System.Data.SQLite.dll"
@@ -104,7 +108,10 @@ $button.add_click({
         }
         })
     $form.controls.add($button2)
+    
 })
+
+# Add objects to form
 $form.controls.add($button)
 $form.controls.add($label)
 $form.controls.add($textfield)
@@ -113,4 +120,5 @@ $form.controls.add($label3)
 $form.controls.add($label4)
 $form.controls.add($textfield2)
 $form.controls.add($combobox)
+
 $form.ShowDialog()
