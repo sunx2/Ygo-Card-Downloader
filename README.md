@@ -10,7 +10,7 @@ A tool for populating cards folder in YGOpro sims based on Floro Ocgcore
 Just open `powershell` on your windows 10 pc / linux (if powershell is installed) and type this following command
 
 ```powershell
-powershell -ExecutionPolicy ByPass -File (iwr https://raw.githubusercontent.com/sunx2/Ygo-Card-Downloader/master/ygocarddownloader.ps1 -useb | iex)
+powershell -ExecutionPolicy ByPass -File (iwr https://raw.githubusercontent.com/sunx2/Ygo-Card-Downloader/master/downloader_new.ps1 -useb | iex)
 ```
 and you will see the main interface.
 
