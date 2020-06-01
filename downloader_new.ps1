@@ -6,7 +6,7 @@
 $form = New-Object Windows.Forms.Form
 $list = New-Object Collections.Generic.List[Int]
 $client = New-Object System.Net.Webclient
-$server = "https://ygoprodeck.com/pics"
+$server = "https://storage.googleapis.com/ygoprodeck.com/pics"
 $form.text = "Ygo Card Downloader"
 $label = New-Object Windows.Forms.Label
 $label.Location = New-Object Drawing.Point 50,30
@@ -47,7 +47,7 @@ $combobox_changed = {
         Write-Host "selected Nexus"
     }
     if ($combobox.Text -eq "Server: Ygoprodeck"){
-        $server = "https://ygoprodeck.com/pics"
+        $server = "https://storage.googleapis.com/ygoprodeck.com/pics"
         Write-Host "selected Ygoprodeck"
     }
 }
