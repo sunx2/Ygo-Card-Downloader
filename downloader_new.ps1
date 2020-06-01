@@ -101,7 +101,7 @@ $button.add_click({
             try{
                 if ($combobox.Text -eq "Server: Ygoprodeck"){
                     $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).jpg")
-                    Write-Host "Downloaded $($id).png"
+                    Write-Host "Downloaded $($id).jpg"
                 }
                 else{
                     $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).jpg")
