@@ -100,7 +100,7 @@ $button.add_click({
         foreach ($id in $list){
             try{
                 if ($combobox.Text -eq "Server: Ygoprodeck"){
-                    $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).jpg")
+                    $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).png")
                     Write-Host "Downloaded $($id).png"
                 }
                 else{
