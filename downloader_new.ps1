@@ -6,7 +6,7 @@
 $form = New-Object Windows.Forms.Form
 $list = New-Object Collections.Generic.List[Int]
 $client = New-Object System.Net.Webclient
-$server = "https://cdn.jsdelivr.net/gh/ElvinaOlacaryn/TheOlacarynWorld@187adfc"
+$server = "https://ygoprodeck.com/pics"
 $form.text = "Ygo Card Downloader"
 $label = New-Object Windows.Forms.Label
 $label.Location = New-Object Drawing.Point 50,30
@@ -40,14 +40,14 @@ $combobox.Items.Add("Server: Ygoprodeck")
 $comboBox.AutoCompleteMode =[System.Windows.Forms.AutoCompleteMode]::SuggestAppend
 $comboBox.AutoCompleteSource =[System.Windows.Forms.AutoCompleteSource]::CustomSource
 $combobox.TabIndex = 1
-$combobox.SelectedIndex = 0
+$combobox.SelectedIndex = 1
 $combobox_changed = {
     if ($combobox.Text -eq "Server: Nexus"){
         $server = "https://cdn.jsdelivr.net/gh/ElvinaOlacaryn/TheOlacarynWorld@187adfc"
         Write-Host "selected Nexus"
     }
     if ($combobox.Text -eq "Server: Ygoprodeck"){
-        $server = "https://ygoprodeck.com/pics/"
+        $server = "https://ygoprodeck.com/pics"
         Write-Host "selected Ygoprodeck"
     }
 }
@@ -101,7 +101,7 @@ $button.add_click({
             try{
                 if ($combobox.Text -eq "Server: Ygoprodeck"){
                     $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).jpg")
-                    Write-Host "Downloaded $($id).jpg"
+                    Write-Host "Downloaded $($id).png"
                 }
                 else{
                     $client.DownloadFile("$($server)/$($id).jpg","$($textfield.Text)\picture\card\$($id).jpg")
