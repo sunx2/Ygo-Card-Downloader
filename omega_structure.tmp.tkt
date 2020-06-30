@@ -1,0 +1,66 @@
+E:\YGO OMEGA\YGO OMEGA
+│   GameAssembly.dll
+│   OmegaUpdater.exe
+│   UnityCrashHandler64.exe
+│   UnityPlayer.dll
+│   WinPixEventRuntime.dll
+│   YGO Omega.exe
+│   
+└───YGO Omega_Data
+    │   app.info
+    │   boot.config
+    │   data.unity3d
+    │   resources.resource
+    │   
+    ├───il2cpp_data
+    │   ├───etc
+    │   │   └───mono
+    │   │       │   browscap.ini
+    │   │       │   config
+    │   │       │   
+    │   │       ├───2.0
+    │   │       │   │   DefaultWsdlHelpGenerator.aspx
+    │   │       │   │   machine.config
+    │   │       │   │   settings.map
+    │   │       │   │   web.config
+    │   │       │   │   
+    │   │       │   └───Browsers
+    │   │       │           Compat.browser
+    │   │       │           
+    │   │       ├───4.0
+    │   │       │   │   DefaultWsdlHelpGenerator.aspx
+    │   │       │   │   machine.config
+    │   │       │   │   settings.map
+    │   │       │   │   web.config
+    │   │       │   │   
+    │   │       │   └───Browsers
+    │   │       │           Compat.browser
+    │   │       │           
+    │   │       ├───4.5
+    │   │       │   │   DefaultWsdlHelpGenerator.aspx
+    │   │       │   │   machine.config
+    │   │       │   │   settings.map
+    │   │       │   │   web.config
+    │   │       │   │   
+    │   │       │   └───Browsers
+    │   │       │           Compat.browser
+    │   │       │           
+    │   │       └───mconfig
+    │   │               config.xml
+    │   │               
+    │   ├───Metadata
+    │   │       global-metadata.dat
+    │   │       
+    │   └───Resources
+    │           Mono.Data.Sqlite.dll-resources.dat
+    │           mscorlib.dll-resources.dat
+    │           System.Data.dll-resources.dat
+    │           
+    ├───Plugins
+    │   └───x86_64
+    │           discord_game_sdk.dll
+    │           SQLite3.dll
+    │           
+    └───Resources
+            unity default resources
+            
